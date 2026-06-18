@@ -20,5 +20,5 @@ class Email(Base):
     tone = Column(String(50), nullable=False, index=True)  # formal, casual, urgent, empathetic, etc.
     email = Column(Text, nullable=False)  # combined subject + body
     subject = Column(String(500), nullable=False)  # extracted subject for quick reference
-    created_at = Column(DateTime, default=datetime.timezone.utc, index=True)
+    created_at = Column(DateTime, default=datetime.utcnow, index=True)
     
