@@ -2,8 +2,8 @@ import os
 from dotenv import load_dotenv
 
 from pydantic import BaseModel, Field
-from langchain import ChatOpenAI
-from langchain import PromptTemplate
+from langchain_openai import ChatOpenAI
+from langchain_core.prompts import PromptTemplate
 
 load_dotenv()
 
@@ -15,8 +15,9 @@ class EmailOutput(BaseModel):
 
 llm = ChatOpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
+    base_url="https://openrouter.ai/api/v1",
     model=os.getenv("MODEL"),
-    temperature=0.7,
+    temperature=float(os.getenv("TEMPERATURE", 0.7)),
 )
 
 structured_llm = llm.with_structured_output(EmailOutput)
