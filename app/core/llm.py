@@ -16,7 +16,7 @@ class EmailOutput(BaseModel):
 llm = ChatOpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
-    model=os.getenv("MODEL"),
+    model=os.getenv("MODEL1"),
     temperature=float(os.getenv("TEMPERATURE", 0.7)),
 )
 
