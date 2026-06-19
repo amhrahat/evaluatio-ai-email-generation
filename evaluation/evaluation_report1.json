@@ -9,12 +9,12 @@
     ],
     "tone": "formal",
     "reference_email": "Dear Sir/Madam, thank you for the interview on Monday. I appreciated the opportunity to discuss the Backend Engineer position and would like to learn about the next steps in the process.",
-    "subject": "Follow-Up on Backend Engineer Interview",
-    "body": "Dear [Hiring Manager's Name],\n\nI hope this message finds you well. I am writing to follow up on my interview for the Backend Engineer position, which took place this past Monday. I greatly appreciated the opportunity to discuss the role and learn more about your team and projects.\n\nI remain very interested in joining your organization and contributing to the success of your engineering efforts. Could you kindly provide an update on the next steps in the hiring process?\n\nThank you for your time and consideration. I look forward to hearing from you.\n\nSincerely,\n[Your Name]",
-    "fact_coverage": 0.8333,
+    "subject": "Follow-Up on Backend Engineer Interview \u2013 Monday",
+    "body": "Dear [Hiring Manager Name],\n\nI hope this message finds you well. I am writing to follow up on my interview for the Backend Engineer position, which took place this past Monday. I greatly appreciated the opportunity to discuss my qualifications and learn more about the team and the role.\n\nI would like to kindly inquire about the next steps in the selection process. Please let me know if there are any additional materials or information I can provide to assist in your decision.\n\nThank you again for your time and consideration. I look forward to hearing from you.\n\nBest regards,\n[Your Name]",
+    "fact_coverage": 0.9167,
     "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.9444
+    "avg": 0.9722
   },
   {
     "id": 2,
@@ -27,11 +27,11 @@
     "tone": "professional",
     "reference_email": "Hello, I am writing to request a brief extension on the current project deadline. The deadline is Friday, but due to an unexpected server issue, we need an additional three days to complete the work.",
     "subject": "Request for Project Deadline Extension",
-    "body": "Dear [Recipient's Name],\n\nI hope this message finds you well. I am writing to formally request a brief extension for the upcoming project deadline, currently set for this Friday.\n\nUnfortunately, we encountered an unexpected server issue that has caused a temporary delay in our progress. To ensure the quality and completeness of the deliverables, I kindly ask for an additional three days, moving the deadline to the following Monday.\n\nI understand the importance of timely delivery and apologize for any inconvenience this may cause. We are actively working to resolve the server issue and will keep you updated on our progress.\n\nThank you for your understanding and support.\n\nBest regards,\n[Your Name]",
-    "fact_coverage": 0.5556,
+    "body": "Dear [Recipient's Name],\n\nI hope this message finds you well. I am writing to respectfully request a three-day extension for the current project deadline, which is set for this Friday. Unfortunately, our team encountered an unexpected server issue that has caused a delay in our progress. We are actively working to resolve this and believe that the additional time will allow us to deliver a high-quality result without compromising standards.\n\nThank you for your understanding and support. Please let me know if you require any further details.\n\nBest regards,\n[Your Name]",
+    "fact_coverage": 0.5833,
     "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.8519
+    "avg": 0.8611
   },
   {
     "id": 3,
@@ -44,11 +44,11 @@
     "tone": "exciting",
     "reference_email": "Hi Team, I am thrilled to announce our product launch on July 1st. The new real-time collaboration feature will be available, and beta users can access early access starting next week.",
     "subject": "Exciting News: Real-Time Collaboration Launches July 1st!",
-    "body": "Dear Team,\n\nWe are thrilled to announce a game-changing update to our platform! On July 1st, we will officially launch our highly anticipated real-time collaboration feature, designed to transform how you work together seamlessly and instantly.\n\nBut that\u2019s not all\u2014our dedicated beta users will get early access starting today, giving you a head start to experience this powerful new capability before anyone else. Imagine editing documents, sharing ideas, and making decisions together in real time, no matter where you are.\n\nGet ready to elevate your productivity and collaboration to new heights. We can\u2019t wait for you to dive in!\n\nBest regards,\n[Your Name]",
-    "fact_coverage": 0.85,
+    "body": "Dear Team,\n\nWe are thrilled to announce the launch of our latest feature: real-time collaboration! Mark your calendars for July 1st, when this game-changing capability goes live. With real-time collaboration, you and your team can work together seamlessly, editing and sharing updates in the moment.\n\nAs a valued beta user, you get exclusive early access starting today. Dive in and experience the future of teamwork firsthand.\n\nGet ready to collaborate like never before. We can't wait to see what you create!\n\nBest regards,\n[Your Name]",
+    "fact_coverage": 0.7167,
     "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.95
+    "avg": 0.9056
   },
   {
     "id": 4,
@@ -60,12 +60,12 @@
     ],
     "tone": "empathetic",
     "reference_email": "Dear customer, we sincerely apologize for the two-hour service outage that affected all users. The issue was caused by a database migration failure, and we are taking immediate steps to prevent this from happening again.",
-    "subject": "Our Apologies for the Recent Service Outage",
-    "body": "Dear Valued Users,\n\nI hope this message finds you well. I am writing to sincerely apologize for the service outage we experienced recently, which lasted for two hours. During this time, all users were affected, and I understand the frustration and inconvenience this must have caused.\n\nThe root cause was a database migration failure that we have since addressed. Our team is taking immediate steps to prevent similar issues in the future.\n\nWe deeply regret the disruption and truly appreciate your patience and understanding. Please feel free to reach out if you have any further questions or concerns.\n\nWarm regards,\n[Your Name]",
-    "fact_coverage": 0.9167,
-    "tone_score": 1.0,
+    "subject": "Apology for Service Outage",
+    "body": "Dear valued users,\n\nWe sincerely apologize for the service outage that occurred recently. This interruption lasted for 2 hours and affected all users, which we understand caused significant inconvenience. The root cause was a database migration failure, and we are taking immediate steps to prevent such issues in the future.\n\nWe deeply regret the impact this had on your work and appreciate your understanding. Our team is committed to providing a reliable service, and we are implementing additional checks to ensure stability.\n\nThank you for your patience.\n\nBest regards,\n[Your Name]",
+    "fact_coverage": 1.0,
+    "tone_score": 0.95,
     "structure_score": 1.0,
-    "avg": 0.9722
+    "avg": 0.9833
   },
   {
     "id": 5,
@@ -77,12 +77,12 @@
     ],
     "tone": "friendly",
     "reference_email": "Hello team, please join our weekly sync every Monday at 10 AM. We will cover the roadmap, blockers, and updates. Bring your status reports so we can keep everything aligned.",
-    "subject": "Reminder: Weekly Sync This Monday at 10 AM",
-    "body": "Hi team,\n\nI hope you're all doing well! Just a quick reminder that our weekly sync is coming up this Monday at 10 AM. We'll be covering the roadmap, any blockers, and general updates, so please come prepared with your status reports to share.\n\nLooking forward to catching up with everyone!\n\nBest,\n[Your Name]",
-    "fact_coverage": 0.7667,
-    "tone_score": 0.9,
+    "subject": "Invitation to Weekly Sync \u2013 Mondays at 10 AM",
+    "body": "Hi Team,\n\nI hope you're having a great week so far! I'd like to invite you to our weekly sync, which will take place every Monday at 10 AM. During these meetings, we'll cover our roadmap, discuss any blockers, and share important updates. To make the most of our time, please bring your status reports along.\n\nLooking forward to seeing you there and keeping our momentum going!\n\nBest,\n[Your Name]",
+    "fact_coverage": 0.9167,
+    "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.8889
+    "avg": 0.9722
   },
   {
     "id": 6,
@@ -94,8 +94,8 @@
     ],
     "tone": "formal",
     "reference_email": "Dear Client, I am writing to confirm the presentation scheduled for next Wednesday in Conference Room B. Please bring the updated slide deck so we can review the latest details together.",
-    "subject": "Confirmation of Client Presentation on Next Wednesday",
-    "body": "Dear [Recipient],\n\nI am writing to formally confirm our upcoming client presentation scheduled for next Wednesday. The presentation will take place in Conference Room B. Please ensure that you bring the updated slide deck for the meeting.\n\nShould you have any questions or require further information, please do not hesitate to reach out.\n\nBest regards,\n[Your Name]",
+    "subject": "Confirmation of Client Presentation - Next Wednesday",
+    "body": "Dear [Recipient's Name],\n\nI am writing to confirm our client presentation scheduled for next Wednesday. The meeting will take place in Conference Room B. Please ensure you bring the updated slide deck for the presentation.\n\nShould you have any questions or require further details, please do not hesitate to reach out.\n\nBest regards,\n[Your Name]",
     "fact_coverage": 0.9167,
     "tone_score": 1.0,
     "structure_score": 1.0,
@@ -111,8 +111,8 @@
     ],
     "tone": "appreciative",
     "reference_email": "Hi everyone, I am pleased to share that we completed the milestone ahead of schedule and passed all quality checks. Thank you to the team and stakeholders for your support.",
-    "subject": "Thank You for Your Support \u2013 Project Milestone Achieved Ahead of Schedule",
-    "body": "Dear Team and Stakeholders,\n\nWe are thrilled to share that we have successfully completed our project milestone ahead of the planned timeline. All quality checks have been passed with flying colors, reflecting the dedication and excellence of everyone involved.\n\nOn behalf of the entire team, I want to express our sincere gratitude for your unwavering support and collaboration throughout this phase. Your contributions have been instrumental in this achievement, and we truly appreciate your commitment.\n\nThank you once again for being a vital part of this journey. We look forward to continuing our successful partnership in the upcoming phases.\n\nBest regards,\n[Your Name]",
+    "subject": "Thank You for Your Support \u2013 Milestone Completed Ahead of Schedule",
+    "body": "Dear Team and Valued Stakeholders,\n\nI am thrilled to share that we have successfully completed a major project milestone ahead of our planned timeline. This achievement was made possible by everyone's dedication and collaboration.\n\nI am especially pleased to report that all quality checks have passed with flying colors, reflecting the high standards we uphold as a team.\n\nOn behalf of the entire team, I want to extend our heartfelt gratitude for your unwavering support and guidance throughout this journey. Your trust and encouragement have been instrumental in reaching this milestone.\n\nThank you once again for being such an integral part of our success.\n\nBest regards,\n[Your Name]",
     "fact_coverage": 0.8056,
     "tone_score": 1.0,
     "structure_score": 1.0,
@@ -128,8 +128,8 @@
     ],
     "tone": "professional",
     "reference_email": "Hello, I submitted the proposal yesterday and would appreciate your review by the end of the week. I am open to any suggestions you may have.",
-    "subject": "Request for Feedback on Proposal Submission",
-    "body": "Dear [Recipient's Name],\n\nI hope this message finds you well. I am writing to kindly request your feedback on the proposal I submitted yesterday. As we aim to finalize our approach, I would greatly appreciate your review by the end of this week to ensure we meet our timeline.\n\nPlease know that I am open to any suggestions or revisions you may have to strengthen the proposal. Your insights are highly valued, and I look forward to your thoughts.\n\nThank you for your time and support.\n\nBest regards,\n[Your Name]",
+    "subject": "Feedback Request on Submitted Proposal",
+    "body": "Dear [Recipient's Name],\n\nI hope this email finds you well. I wanted to follow up on the proposal I submitted yesterday. Given the need for a review by the end of this week, I would greatly appreciate your feedback at your earliest convenience.\n\nPlease know that I am open to any suggestions or revisions you may have to strengthen the proposal. Your insights are highly valued, and I look forward to your thoughts.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]",
     "fact_coverage": 0.9167,
     "tone_score": 1.0,
     "structure_score": 1.0,
@@ -163,10 +163,10 @@
     "tone": "urgent",
     "reference_email": "This is urgent: a critical vulnerability has been found and requires an immediate patch. The security team has already been notified and is taking action.",
     "subject": "Urgent: Critical Security Vulnerability Requires Immediate Action",
-    "body": "Dear Team,\n\nThis is an urgent escalation regarding a critical vulnerability that has been identified in our system. An immediate patch is required to mitigate the risk, and the security team has already been notified to expedite the response. Please treat this as a top priority and coordinate with the necessary stakeholders to ensure the patch is applied without delay. \n\nThank you for your immediate attention to this matter.\n\nBest regards,\n[Your Name]",
-    "fact_coverage": 0.8889,
+    "body": "Dear Team,\n\nA critical vulnerability has been identified in our system that poses an immediate security risk. We need to deploy a patch as soon as possible to mitigate this issue. The security team has already been notified and is prioritizing this matter. Please treat this as an urgent priority and take the necessary steps to apply the patch without delay.\n\nBest regards,\n[Your Name]",
+    "fact_coverage": 0.7778,
     "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.963
+    "avg": 0.9259
   }
 ]

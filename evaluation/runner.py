@@ -82,9 +82,9 @@ def export_csv(results: list[dict], path: str):
     with open(path, "w", newline="", encoding="utf-8") as f:
         # Write metric definitions as comments
         f.write("# Metric definitions:\n")
-        f.write("# fact_coverage: Fraction of required key facts present in the generated email subject/body. This score is the number of matched facts divided by the total required facts.\n")
-        f.write("# tone_score: Degree to which the generated email matches the requested tone. Uses an LLM judge when available, otherwise keyword matching fallback.\n")
-        f.write("# structure_score: Email structure score based on presence of subject, appropriate length, greeting, and closing, capped at 1.0.\n")
+        f.write("# fact_coverage: Average, per key fact, of the proportion of that fact's significant (non-stopword) words found in the generated email, matched on word boundaries. 1.0 means every fact's content words are fully present; partially-covered facts get partial credit instead of all-or-nothing.\n")
+        f.write("# tone_score: Degree to which the generated email matches the requested tone, rated 0-1 by an LLM judge (response is parsed for the first number and clamped to [0,1]). Falls back to keyword matching only if the judge call fails or returns no parseable number.\n")
+        f.write("# structure_score: Email structure score, capped at 1.0: non-empty subject (0.3) + body length between 20-300 words (0.3) + a recognized greeting e.g. Dear/Hello/Hi (0.2) + a recognized closing e.g. Regards/Sincerely/Best/Thank you (0.2).\n")
         f.write("\n")
 
         # Use proper CSV quoting for multi-line content
