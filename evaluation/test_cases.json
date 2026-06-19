@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "intent": "Follow up after interview",
+    "key_facts": [
+      "Interview was on Monday",
+      "Position: Backend Engineer",
+      "Want to know next steps"
+    ],
+    "tone": "formal",
+    "reference_email": "Dear Sir/Madam, thank you for the interview on Monday. I appreciated the opportunity to discuss the Backend Engineer position and would like to learn about the next steps in the process."
+  },
+  {
+    "id": 2,
+    "intent": "Request project deadline extension",
+    "key_facts": [
+      "Current deadline is Friday",
+      "Need extra 3 days",
+      "Reason: unexpected server issue"
+    ],
+    "tone": "professional",
+    "reference_email": "Hello, I am writing to request a brief extension on the current project deadline. The deadline is Friday, but due to an unexpected server issue, we need an additional three days to complete the work."
+  },
+  {
+    "id": 3,
+    "intent": "Announce product launch",
+    "key_facts": [
+      "Launch date is July 1st",
+      "New feature: real-time collaboration",
+      "Early access available for beta users"
+    ],
+    "tone": "exciting",
+    "reference_email": "Hi Team, I am thrilled to announce our product launch on July 1st. The new real-time collaboration feature will be available, and beta users can access early access starting next week."
+  },
+  {
+    "id": 4,
+    "intent": "Apologize for service outage",
+    "key_facts": [
+      "Outage lasted 2 hours",
+      "Affected all users",
+      "Root cause: database migration failure"
+    ],
+    "tone": "empathetic",
+    "reference_email": "Dear customer, we sincerely apologize for the two-hour service outage that affected all users. The issue was caused by a database migration failure, and we are taking immediate steps to prevent this from happening again."
+  },
+  {
+    "id": 5,
+    "intent": "Invite to weekly sync",
+    "key_facts": [
+      "Sync every Monday at 10 AM",
+      "Agenda: roadmap, blockers, updates",
+      "Please bring status reports"
+    ],
+    "tone": "friendly",
+    "reference_email": "Hello team, please join our weekly sync every Monday at 10 AM. We will cover the roadmap, blockers, and updates. Bring your status reports so we can keep everything aligned."
+  },
+  {
+    "id": 6,
+    "intent": "Confirm client presentation",
+    "key_facts": [
+      "Presentation scheduled for next Wednesday",
+      "Location: Conference Room B",
+      "Bring updated slide deck"
+    ],
+    "tone": "formal",
+    "reference_email": "Dear Client, I am writing to confirm the presentation scheduled for next Wednesday in Conference Room B. Please bring the updated slide deck so we can review the latest details together."
+  },
+  {
+    "id": 7,
+    "intent": "Share project milestone success",
+    "key_facts": [
+      "Milestone completed ahead of time",
+      "Quality checks passed",
+      "Team thanks stakeholders"
+    ],
+    "tone": "appreciative",
+    "reference_email": "Hi everyone, I am pleased to share that we completed the milestone ahead of schedule and passed all quality checks. Thank you to the team and stakeholders for your support."
+  },
+  {
+    "id": 8,
+    "intent": "Request feedback on proposal",
+    "key_facts": [
+      "Proposal submitted yesterday",
+      "Needs review by end of week",
+      "Open to suggestions"
+    ],
+    "tone": "professional",
+    "reference_email": "Hello, I submitted the proposal yesterday and would appreciate your review by the end of the week. I am open to any suggestions you may have."
+  },
+  {
+    "id": 9,
+    "intent": "Notify about staff training",
+    "key_facts": [
+      "Training on June 28",
+      "Topics: security best practices",
+      "Attendance mandatory"
+    ],
+    "tone": "informative",
+    "reference_email": "Attention all staff: training is scheduled for June 28 on security best practices. Attendance is mandatory, so please mark your calendars."
+  },
+  {
+    "id": 10,
+    "intent": "Escalate urgent security issue",
+    "key_facts": [
+      "Critical vulnerability found",
+      "Immediate patch required",
+      "Security team already notified"
+    ],
+    "tone": "urgent",
+    "reference_email": "This is urgent: a critical vulnerability has been found and requires an immediate patch. The security team has already been notified and is taking action."
+  }
+]
