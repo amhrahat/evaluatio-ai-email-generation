@@ -9,12 +9,12 @@
     ],
     "tone": "formal",
     "reference_email": "Dear Sir/Madam, thank you for the interview on Monday. I appreciated the opportunity to discuss the Backend Engineer position and would like to learn about the next steps in the process.",
-    "subject": "Follow-Up After Backend Engineer Interview",
-    "body": "Dear [Hiring Manager's Name],\n\nI hope this email finds you well. I wanted to express my gratitude for the opportunity to interview for the Backend Engineer position on Monday. It was a pleasure to discuss the role and learn more about the company.\n\nI am very interested in the position and would appreciate any information regarding the next steps in the hiring process. Please let me know if there is any additional information you need from me.\n\nThank you once again for your time and consideration. I look forward to hearing from you soon.\n\nBest regards,\n\n[Your Full Name]",
-    "fact_coverage": 1.0,
-    "tone_score": 0.6,
+    "subject": "Follow-up on Backend Engineer Interview",
+    "body": "Dear Hiring Manager, \n\nI hope this email finds you well. \n I wanted to express my appreciation for the opportunity to interview for the Backend Engineer position on Monday. It was a pleasure to learn more about the team and the exciting projects that your company is working on. \n\nI am eager to know the next steps in the interview process. I am very interested in the position and would love to move forward. \n\nThank you for your time and consideration. I look forward to hearing from you soon. \n\nBest regards, \n[Your Name]",
+    "fact_coverage": 0.9167,
+    "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.8667
+    "avg": 0.9722
   },
   {
     "id": 2,
@@ -27,11 +27,11 @@
     "tone": "professional",
     "reference_email": "Hello, I am writing to request a brief extension on the current project deadline. The deadline is Friday, but due to an unexpected server issue, we need an additional three days to complete the work.",
     "subject": "Request for Project Deadline Extension",
-    "body": "Dear [Recipient's Name],\n\nI hope this email finds you well.\n\nI am writing to request a three-day extension for the project deadline, which is currently set for this Friday. Unfortunately, we have encountered an unexpected server issue that has impacted our progress. Despite our best efforts, it has become clear that we will need additional time to ensure the project is completed to the high standards we both expect.\n\nWe anticipate that an extra three days will allow us to resolve the issue and deliver a high-quality outcome. We understand the importance of meeting deadlines and are committed to minimizing any inconvenience this may cause.\n\nThank you for your understanding and consideration. Please let me know if there are any additional details you need or if there is a preferred way to proceed with this request.\n\nBest regards,\n\n[Your Name]\n[Your Position]\n[Your Contact Information]",
-    "fact_coverage": 1.0,
-    "tone_score": 0.5,
+    "body": "Dear [Recipient's Name],\n\nI hope this email finds you well.\n\nI am writing to discuss the current project deadline, which is scheduled for this Friday. Unfortunately, we have encountered an unexpected server issue that has caused some delays in our progress. To ensure the quality and completion of the project, I kindly request an extension of three additional days.\n\nI understand the importance of meeting deadlines and apologize for any inconvenience this may cause. I am confident that with this additional time, we will be able to deliver a high-quality project. I will keep you updated on our progress and any developments regarding the server issue.\n\nThank you for your understanding and consideration. I look forward to your positive response.\n\nBest regards,\n\n[Your Name]",
+    "fact_coverage": 0.6667,
+    "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.8333
+    "avg": 0.8889
   },
   {
     "id": 3,
@@ -43,12 +43,12 @@
     ],
     "tone": "exciting",
     "reference_email": "Hi Team, I am thrilled to announce our product launch on July 1st. The new real-time collaboration feature will be available, and beta users can access early access starting next week.",
-    "subject": "Get Ready to Revolutionize Your Workflow \u2013 Our New Feature is Launching on July 1st!",
-    "body": "Hi Team,  We are thrilled to announce the launch of our latest and most exciting feature yet\u2014real-time collaboration! \ud83d\ude80 Starting July 1st, you'll be able to work seamlessly with your colleagues, making teamwork more efficient and enjoyable than ever before. Mark your calendars and get ready to elevate your productivity to new heights! As a special bonus, our beta users will have early access to this game-changing feature. Stay tuned for more details on how to get started. Let's make every project a collaborative success! Best, [Your Name]",
-    "fact_coverage": 1.0,
-    "tone_score": 0.5,
-    "structure_score": 0.6,
-    "avg": 0.7
+    "subject": "Get Ready to Revolutionize Your Workflow: Our New Feature is Launching on July 1st!",
+    "body": "Dear Valued User, \n\nWe are thrilled to announce that our latest feature, real-time collaboration, will be launching on July 1st! This game-changing addition will allow you and your team to work together seamlessly, in real-time, making your projects more efficient and collaborative than ever before. \n\nBut that's not all! As a valued user, we are offering you early access to this feature as part of our beta program. Be among the first to experience the future of teamwork and provide us with your valuable feedback. \n\nStay tuned for more details and get ready to transform the way you work. The future is here, and it's exciting! \n\nBest regards,\n[Your Name]\n[Your Position]\n[Your Company]",
+    "fact_coverage": 0.7,
+    "tone_score": 1.0,
+    "structure_score": 1.0,
+    "avg": 0.9
   },
   {
     "id": 4,
@@ -60,12 +60,12 @@
     ],
     "tone": "empathetic",
     "reference_email": "Dear customer, we sincerely apologize for the two-hour service outage that affected all users. The issue was caused by a database migration failure, and we are taking immediate steps to prevent this from happening again.",
-    "subject": "Apology for Today's Service Outage",
-    "body": "Dear Valued Users, \n\nWe hope this message finds you well. We are writing to apologize for the service outage you experienced today. We understand the inconvenience this may have caused and we sincerely regret any disruption to your activities. \n\nThe outage, which lasted for approximately 2 hours, affected all users due to a failure in our database migration process. Our technical team has been working diligently to resolve the issue and restore full service. We are pleased to confirm that the service has been fully restored and is now operational. \n\nWe are committed to ensuring the reliability and stability of our service, and we are taking immediate steps to prevent such incidents from occurring in the future. This includes a thorough review of our database migration procedures and additional safeguards to protect against similar failures. \n\nOnce again, we apologize for any inconvenience caused and thank you for your understanding and patience. If you have any questions or concerns, please do not hesitate to contact our support team. \n\nBest regards, \n[Your Name]\n[Your Position]\n[Your Contact Information] ",
+    "subject": "Apology for Recent Service Outage",
+    "body": "Dear Valued Customer,  I hope this message finds you well. I am writing to sincerely apologize for the service outage you experienced today. The outage lasted for approximately 2 hours and unfortunately, it affected all of our users. We understand the inconvenience this may have caused and we deeply regret any disruption to your day or workflow. The root cause of the outage was a database migration failure, and our technical team has been working diligently to rectify the issue.  We have implemented additional safeguards to prevent this from happening again in the future.  Your patience and understanding during this time are greatly appreciated. If you have any questions or need further assistance, please do not hesitate to contact our support team.  Thank you for your continued support and for choosing our service.  Best regards, [Your Name] [Your Position]",
     "fact_coverage": 1.0,
-    "tone_score": 0.4,
+    "tone_score": 0.95,
     "structure_score": 1.0,
-    "avg": 0.8
+    "avg": 0.9833
   },
   {
     "id": 5,
@@ -77,12 +77,12 @@
     ],
     "tone": "friendly",
     "reference_email": "Hello team, please join our weekly sync every Monday at 10 AM. We will cover the roadmap, blockers, and updates. Bring your status reports so we can keep everything aligned.",
-    "subject": "Weekly Sync Invitation for Monday at 10 AM",
-    "body": "Hi Team,  Hope this email finds you well! I'm writing to remind everyone that our weekly sync is scheduled for Monday at 10 AM. This meeting is a great opportunity for us to align on our roadmap, discuss any blockers, and share updates. Please come prepared with your status reports so we can make the most of our time together. Looking forward to a productive and engaging discussion! Best, [Your Name] ",
-    "fact_coverage": 1.0,
-    "tone_score": 0.5,
-    "structure_score": 0.6,
-    "avg": 0.7
+    "subject": "Invitation to Our Weekly Sync",
+    "body": "Hi Team,\n\nHope you're all doing well! Just a friendly reminder that our weekly sync is scheduled for this Monday at 10 AM.\n\nHere\u2019s what we\u2019ll be covering:\n- Roadmap discussion\n- Addressing any blockers\n- Updates from everyone\n\nPlease come prepared with your status reports. Looking forward to seeing you all there!\n\nBest,\n[Your Name]",
+    "fact_coverage": 0.7667,
+    "tone_score": 1.0,
+    "structure_score": 1.0,
+    "avg": 0.9222
   },
   {
     "id": 6,
@@ -94,12 +94,12 @@
     ],
     "tone": "formal",
     "reference_email": "Dear Client, I am writing to confirm the presentation scheduled for next Wednesday in Conference Room B. Please bring the updated slide deck so we can review the latest details together.",
-    "subject": "Confirmation of Client Presentation Details",
-    "body": "Dear [Client's Name],\n\nI hope this email finds you well. I am writing to confirm the details of our upcoming presentation. As per our previous discussions, the presentation is scheduled for next Wednesday.\n\nLocation: Conference Room B\n\nPlease ensure that you bring the updated slide deck with you on the day of the presentation. If there are any changes or additional requirements, kindly let me know at your earliest convenience.\n\nThank you for your attention to this matter. I look forward to a successful presentation.\n\nBest regards,\n\n[Your Name]",
-    "fact_coverage": 1.0,
-    "tone_score": 0.4,
+    "subject": "Confirmation of Client Presentation",
+    "body": "Dear [Client's Name],\n\nI hope this email finds you well.\n\nI am writing to confirm the details of our upcoming presentation scheduled for next Wednesday. The presentation will take place in Conference Room B. Please ensure you have the updated slide deck ready for the session.\n\nThank you for your attention to these details. If you have any questions or need further information, please do not hesitate to contact me.\n\nBest regards,\n\n[Your Name]\n[Your Position]\n[Your Contact Information]\n[Your Company Name]",
+    "fact_coverage": 0.8333,
+    "tone_score": 0.95,
     "structure_score": 1.0,
-    "avg": 0.8
+    "avg": 0.9278
   },
   {
     "id": 7,
@@ -111,12 +111,12 @@
     ],
     "tone": "appreciative",
     "reference_email": "Hi everyone, I am pleased to share that we completed the milestone ahead of schedule and passed all quality checks. Thank you to the team and stakeholders for your support.",
-    "subject": "Exciting Milestone Achievement and Heartfelt Thanks",
-    "body": "Dear [Stakeholders' Names], \n\nI hope this email finds you well. I am thrilled to share some fantastic news! Our team has successfully completed the [Project Name] milestone ahead of schedule. This achievement would not have been possible without the unwavering support and guidance from each and every one of you. \n\nI am also pleased to report that all quality checks have been passed with flying colors, ensuring that our work meets the highest standards. \n\nOn behalf of the entire team, I want to extend our sincere thanks for your continuous encouragement, valuable feedback, and trust in our abilities. We are truly grateful for your partnership and look forward to continuing to work together to achieve even greater successes. \n\nWarm regards, \n\n[Your Name] \n[Your Position] \n[Your Contact Information] ",
-    "fact_coverage": 1.0,
-    "tone_score": 0.75,
+    "subject": "Exciting News: [Project Name] Milestone Achieved Ahead of Schedule! ",
+    "body": "Dear [Stakeholder's Name],\n\nI hope this email finds you well. I am thrilled to share some fantastic news about our project!  \n\nI am pleased to inform you that we have successfully completed the [specific milestone] ahead of time. Not only did we meet the deadline, but we also passed all the quality checks with flying colors.  This achievement demonstrates our team's dedication, hard work, and commitment to excellence.  \n\nWe would like to extend our heartfelt thanks to you and the entire team for your unwavering support and guidance throughout this journey. Your contributions have been invaluable, and we are grateful for the opportunity to work with you.  \n\nWe look forward to continuing this successful collaboration as we move forward with the next phases of the project.  \n\nBest regards,\n\n[Your Name]",
+    "fact_coverage": 0.8889,
+    "tone_score": 0.0,
     "structure_score": 1.0,
-    "avg": 0.9167
+    "avg": 0.6296
   },
   {
     "id": 8,
@@ -128,12 +128,12 @@
     ],
     "tone": "professional",
     "reference_email": "Hello, I submitted the proposal yesterday and would appreciate your review by the end of the week. I am open to any suggestions you may have.",
-    "subject": "Request for Feedback on Recent Proposal",
-    "body": "Dear [Recipient's Name],\n\nI hope this email finds you well.\n\nI am writing to follow up on the proposal I submitted yesterday. I would greatly appreciate your review and feedback by the end of this week, as we are looking to move forward with the next steps promptly. \n\nPlease feel free to share any suggestions or insights you may have; I am more than open to discussing and incorporating your feedback.\n\nThank you for your time and consideration. I look forward to your response. \n\nBest regards,\n\n[Your Name]",
-    "fact_coverage": 1.0,
-    "tone_score": 0.75,
+    "subject": "Request for Feedback on Proposal Submitted Yesterday",
+    "body": "Dear [Recipient's Name],\n\nI hope this email finds you well.\n\nI am writing to follow up on the proposal I submitted yesterday. I would greatly appreciate it if you could review it at your earliest convenience and provide any feedback or suggestions you may have. Given the timeline, I would be grateful if the review could be completed by the end of this week.\n\nI am open to any input you might have and look forward to your insights.\n\nThank you for your time and consideration.\n\nBest regards,\n[Your Name]",
+    "fact_coverage": 0.9167,
+    "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.9167
+    "avg": 0.9722
   },
   {
     "id": 9,
@@ -145,12 +145,12 @@
     ],
     "tone": "informative",
     "reference_email": "Attention all staff: training is scheduled for June 28 on security best practices. Attendance is mandatory, so please mark your calendars.",
-    "subject": "Mandatory Staff Training on Security Best Practices",
-    "body": "Dear Team,\n\nI am writing to inform you about an upcoming mandatory training session scheduled for June 28. The focus of this training will be on security best practices. Your attendance is required to ensure that we maintain a secure and compliant work environment.\n\nPlease mark your calendars and make the necessary arrangements to attend.\n\nIf you have any questions or need further details, feel free to reach out.\n\nBest regards,\n[Your Name]",
-    "fact_coverage": 1.0,
-    "tone_score": 0.25,
+    "subject": "Mandatory Staff Training on Security Best Practices - June 28",
+    "body": "Dear Team, \n\nI am writing to inform you about an upcoming mandatory staff training session focused on security best practices. The training is scheduled for June 28.\n\nThis session is crucial for ensuring that our team is well-versed in the latest security protocols and best practices. Your attendance is mandatory to help maintain the highest standards of security within our organization.\n\nWe appreciate your commitment to this important aspect of our operations. If you have any questions or need further information, please do not hesitate to reach out.\n\nThank you for your cooperation.\n\nBest regards, \n[Your Name]\n[Your Position]\n[Your Contact Information]",
+    "fact_coverage": 0.9167,
+    "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.75
+    "avg": 0.9722
   },
   {
     "id": 10,
@@ -162,11 +162,11 @@
     ],
     "tone": "urgent",
     "reference_email": "This is urgent: a critical vulnerability has been found and requires an immediate patch. The security team has already been notified and is taking action.",
-    "subject": "Urgent Action Required: Critical Security Vulnerability Identified",
-    "body": "Dear [Recipient's Name],\n\nI hope this message finds you well. However, I am writing to bring to your immediate attention a critical security issue that has been identified within our systems.\n\nA critical vulnerability has been discovered that requires an immediate patch to prevent potential exploitation. Our security team has already been notified and is actively working on resolving the issue. However, their efforts need urgent support from your end to ensure a swift and effective resolution.\n\nPlease prioritize this matter and take the necessary steps to implement the required patch as soon as possible. Your prompt action is crucial in mitigating any potential security risks and ensuring the integrity of our systems.\n\nThank you for your immediate attention to this urgent matter. If you have any questions or need further information, please do not hesitate to contact me.\n\nBest regards,\n\n[Your Name]\n[Your Position]\n[Your Contact Information]",
+    "subject": "URGENT: Critical Vulnerability Requires Immediate Patch",
+    "body": "Subject: URGENT: Critical Vulnerability Requires Immediate Patch\n\nDear [Recipient's Name],\n\nI am writing to escalate a critical security issue that has just been identified. A critical vulnerability has been found in our system, and immediate action is required to mitigate the risk.\n\nThe security team has already been notified, but I am bringing this to your attention to ensure that all necessary resources are mobilized to address this urgent matter.\n\nPlease prioritize the development and deployment of the necessary patch to close this vulnerability as soon as possible. The security of our systems and data is paramount, and swift action is crucial to prevent any potential breaches.\n\nThank you for your immediate attention to this critical issue. Please keep me updated on the progress and expected resolution time.\n\nBest regards,\n\n[Your Name]\n[Your Position]\n[Your Contact Information]",
     "fact_coverage": 1.0,
-    "tone_score": 0.4,
+    "tone_score": 1.0,
     "structure_score": 1.0,
-    "avg": 0.8
+    "avg": 1.0
   }
 ]
