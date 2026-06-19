@@ -11,6 +11,7 @@ evaluatio-ai-email-generation/
 │   │   └── routes.py          # FastAPI route definitions
 │   ├── core/
 │   │   └── llm.py             # LLM integration and email generation
+│   │   └── llm2.py            # LLM2 integration and email generation
 │   ├── db/
 │   │   ├── models.py          # SQLAlchemy database models
 │   │   └── session.py         # Database session management
@@ -22,8 +23,10 @@ evaluatio-ai-email-generation/
 │   ├── runner.py              # Evaluation test runner
 │   ├── metrics.py             # Evaluation metrics implementation
 │   ├── test_cases.json        # Test case definitions
-│   ├── evaluation_report.csv  # CSV evaluation results
-│   └── evaluation_report.json # JSON evaluation results
+│   ├── evaluation_report1.csv  # CSV evaluation results
+│   └── evaluation_report1.json # JSON evaluation results
+│   ├── evaluation_report2.csv  # CSV evaluation results
+│   └── evaluation_report2.json # JSON evaluation results
 ├── pyproject.toml             # Project dependencies (uv)
 ├── uv.lock                    # Locked dependency versions
 ├── .env                       # Environment variables (create from .env.example)
@@ -211,22 +214,52 @@ Test cases are defined in `evaluation/test_cases.json` with the following struct
 
 After running the evaluation, two reports are generated:
 
-- **CSV Report** (`evaluation_report.csv`): Tab-separated with metric definitions
-- **JSON Report** (`evaluation_report.json`): Structured data for programmatic analysis
+- **CSV Report** (`evaluation_report1.csv`): Tab-separated with metric definitions
+- **JSON Report** (`evaluation_report1.json`): Structured data for programmatic analysis
 
+## Model Comparison Strategy
+
+The evaluation framework is designed to compare two different LLM strategies under identical test conditions.
+
+### Models Used
+
+- **Model 1 (High-performance baseline)**  
+  GPT-4o-mini with advanced prompt engineering (role-based + structured instructions + few-shot guidance)
+
+- **Model 2 (Lower-capability comparison model)**  
+  meta-llama/llama-3.2-1b-instruct with the same evaluation pipeline
+
+### Prompting Strategy Comparison
+
+Each model is evaluated under two different prompting approaches:
+
+- Advanced structured prompt (role + constraints + explicit reasoning flow)
+- Minimal baseline prompt (simple instruction-only format)
+
+### Evaluation Execution
+
+Both models are executed using the same 10 test scenarios in a single evaluation run.
+
+For each model:
+- Emails are generated for all test cases
+- Custom metrics are computed (Fact Coverage, Tone Score, Structure Score)
+- Results are exported independently
+
+### Output Artifacts
+
+The evaluation script generates separate output files:
+
+- `evaluation_report1.csv`
+- `evaluation_report2.csv`
+
+These files are used for comparative analysis and final reporting.
 ## Database
 
 - **Default**: SQLite (`emails.db` in project root)
 - **Configurable**: Set `DATABASE_URL` in `.env` to use PostgreSQL
 - **Schema**: Single `emails` table with columns for id, intents, key_facts, tone, email, subject, and created_at
 
-## Development
 
-### Running Tests
-
-```bash
-pytest -q
-```
 
 ### Code Style
 
@@ -239,6 +272,3 @@ The project follows standard Python conventions with type hints and docstrings.
 - **Database Errors**: Check `DATABASE_URL` in `.env` and ensure database file is writable
 - **Import Errors**: Ensure virtual environment is activated and dependencies are installed with `uv sync`
 
-## License
-
-MIT

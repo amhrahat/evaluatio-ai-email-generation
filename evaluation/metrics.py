@@ -27,7 +27,7 @@ def get_judge_llm() -> ChatOpenAI:
     return ChatOpenAI(
         api_key=api_key,
         base_url="https://openrouter.ai/api/v1",
-        model=os.getenv("MODEL1"),
+        model=os.getenv("MODEL"),
         temperature=0.0,
     )
 
