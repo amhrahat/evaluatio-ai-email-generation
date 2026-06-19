@@ -1,11 +1,144 @@
-id	fact_coverage	tone_score	structure_score	avg
-1	1.0	1.0	1.0	1.0
-2	1.0	1.0	1.0	1.0
-3	1.0	1.0	1.0	1.0
-4	1.0	0.9	1.0	0.9667
-5	1.0	0.9	0.6	0.8333
-6	1.0	1.0	1.0	1.0
-7	1.0	1.0	1.0	1.0
-8	1.0	1.0	1.0	1.0
-9	1.0	1.0	1.0	1.0
-10	1.0	1.0	1.0	1.0
+id	intent	key_facts	tone	reference_email	subject	body	fact_coverage	tone_score	structure_score	avg	metric_definition
+											Metric definitions:
+											fact_coverage: Fraction of required key facts present in the generated email subject/body. This score is the number of matched facts divided by the total required facts.
+											tone_score: Degree to which the generated email matches the requested tone. Uses an LLM judge when available, otherwise keyword matching fallback.
+											structure_score: Email structure score based on presence of subject, appropriate length, greeting, and closing, capped at 1.0.
+											
+1	Follow up after interview	"[""Interview was on Monday"", ""Position: Backend Engineer"", ""Want to know next steps""]"	formal	Dear Sir/Madam, thank you for the interview on Monday. I appreciated the opportunity to discuss the Backend Engineer position and would like to learn about the next steps in the process.	Follow-Up on Backend Engineer Interview	"Dear [Interviewer's Name],
+
+I hope this message finds you well. I wanted to take a moment to express my gratitude for the opportunity to interview for the Backend Engineer position on Monday. I enjoyed our discussion and learning more about the innovative projects at [Company Name]. 
+
+I am writing to inquire about the next steps in the hiring process. I am very enthusiastic about the possibility of joining your team and contributing to the exciting work being done at [Company Name]. 
+
+Thank you once again for the opportunity. I look forward to hearing from you soon.
+
+Best regards,
+
+[Your Name]  
+[Your LinkedIn Profile or Contact Information]  
+[Your Phone Number]  
+[Your Email Address]"	1.0	1.0	1.0	1.0	
+2	Request project deadline extension	"[""Current deadline is Friday"", ""Need extra 3 days"", ""Reason: unexpected server issue""]"	professional	Hello, I am writing to request a brief extension on the current project deadline. The deadline is Friday, but due to an unexpected server issue, we need an additional three days to complete the work.	Request for Extension on Project Deadline	"Dear [Recipient's Name],
+
+I hope this message finds you well. I am writing to formally request an extension on our current project deadline, which is set for this Friday. 
+
+Unfortunately, we have encountered an unexpected server issue that has hindered our progress. In light of this situation, I believe that an additional three days would allow us to address these challenges effectively and ensure that we deliver the high-quality results that are expected.
+
+I appreciate your understanding and consideration of this request. Please let me know if this extension can be accommodated.
+
+Thank you for your attention to this matter.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Contact Information]  
+[Your Company]"	1.0	1.0	1.0	1.0	
+3	Announce product launch	"[""Launch date is July 1st"", ""New feature: real-time collaboration"", ""Early access available for beta users""]"	exciting	Hi Team, I am thrilled to announce our product launch on July 1st. The new real-time collaboration feature will be available, and beta users can access early access starting next week.	Exciting Announcement: New Product Launch on July 1st!	"Dear Team,
+
+We are thrilled to announce the upcoming launch of our latest product on July 1st! This innovative release introduces an exciting new feature: real-time collaboration, which will enhance the way our users connect and work together.
+
+As a special thank you to our dedicated beta users, we are offering early access to this feature ahead of the official launch. We believe this will greatly improve user experience and foster a more interactive environment.
+
+Stay tuned for more details as we approach the launch date. We can't wait for you to experience the new possibilities that await!
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Company]"	1.0	0.9	1.0	0.9667	
+4	Apologize for service outage	"[""Outage lasted 2 hours"", ""Affected all users"", ""Root cause: database migration failure""]"	empathetic	Dear customer, we sincerely apologize for the two-hour service outage that affected all users. The issue was caused by a database migration failure, and we are taking immediate steps to prevent this from happening again.	Apology for Recent Service Disruption	"Dear Valued Users,
+
+I hope this message finds you well. We want to sincerely apologize for the service outage that affected all users for a duration of two hours. We understand how disruptive this can be to your experience, and we are truly sorry for any inconvenience it may have caused.
+
+The root cause of the outage was a failure during our database migration process. We acknowledge the importance of our services and are committed to ensuring that such incidents do not occur in the future. Our team is actively working on implementing improvements to prevent similar issues.
+
+Thank you for your understanding and patience during this time. We appreciate your support and are here to assist you with any concerns you may have.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Company]  
+[Contact Information]"	1.0	0.9	1.0	0.9667	
+5	Invite to weekly sync	"[""Sync every Monday at 10 AM"", ""Agenda: roadmap, blockers, updates"", ""Please bring status reports""]"	friendly	Hello team, please join our weekly sync every Monday at 10 AM. We will cover the roadmap, blockers, and updates. Bring your status reports so we can keep everything aligned.	Weekly Sync Invitation	"Hi Team,
+
+I hope this message finds you well! I’d like to invite you to our weekly sync every Monday at 10 AM. This will be a great opportunity for us to discuss the roadmap, address any blockers, and share updates on our projects.
+
+Please remember to bring your status reports so we can have a productive discussion.
+
+Looking forward to seeing everyone there!
+
+Best,
+[Your Name]"	1.0	0.8	0.6	0.8	
+6	Confirm client presentation	"[""Presentation scheduled for next Wednesday"", ""Location: Conference Room B"", ""Bring updated slide deck""]"	formal	Dear Client, I am writing to confirm the presentation scheduled for next Wednesday in Conference Room B. Please bring the updated slide deck so we can review the latest details together.	Confirmation of Client Presentation	"Dear [Client's Name],
+
+I hope this message finds you well. I am writing to confirm our upcoming presentation scheduled for next Wednesday. The meeting will take place in Conference Room B.
+
+Please ensure that you bring the updated slide deck for our discussion. 
+
+Should you have any questions or require further assistance prior to the meeting, feel free to reach out.
+
+Looking forward to our presentation.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Company]  
+[Your Contact Information]"	1.0	1.0	1.0	1.0	
+7	Share project milestone success	"[""Milestone completed ahead of time"", ""Quality checks passed"", ""Team thanks stakeholders""]"	appreciative	Hi everyone, I am pleased to share that we completed the milestone ahead of schedule and passed all quality checks. Thank you to the team and stakeholders for your support.	Celebrating Our Project Milestone Success	"Dear Team and Esteemed Stakeholders,
+
+I am thrilled to share that we have successfully completed a significant milestone in our project ahead of schedule. This achievement not only highlights our commitment to excellence but also reflects the hard work and dedication of everyone involved.
+
+I am pleased to report that all quality checks have passed, ensuring that we are on track for the next phases of our project. This success would not have been possible without the invaluable support and guidance from our stakeholders. 
+
+Thank you for your continued trust and collaboration; it greatly motivates us to strive for even greater heights.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Company]"	1.0	1.0	1.0	1.0	
+8	Request feedback on proposal	"[""Proposal submitted yesterday"", ""Needs review by end of week"", ""Open to suggestions""]"	professional	Hello, I submitted the proposal yesterday and would appreciate your review by the end of the week. I am open to any suggestions you may have.	Request for Feedback on Proposal Submission	"Dear [Recipient's Name],
+
+I hope this message finds you well. I wanted to follow up on the proposal I submitted yesterday and kindly request your feedback. In order to incorporate any necessary changes, I would appreciate it if you could review the document by the end of the week.
+
+Please feel free to share any suggestions or insights you may have, as I am open to your recommendations.
+
+Thank you for your attention to this matter. I look forward to hearing from you soon.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Contact Information]"	1.0	1.0	1.0	1.0	
+9	Notify about staff training	"[""Training on June 28"", ""Topics: security best practices"", ""Attendance mandatory""]"	informative	Attention all staff: training is scheduled for June 28 on security best practices. Attendance is mandatory, so please mark your calendars.	Mandatory Staff Training on Security Best Practices	"Dear Team,
+
+I hope this message finds you well. I would like to inform you that there will be a mandatory staff training session on June 28, focusing on security best practices. This training is crucial for ensuring that we all understand and implement effective measures to protect our organization and its assets.
+
+Please mark your calendars and make the necessary arrangements to attend. Your participation is essential and greatly appreciated.
+
+Thank you for your attention to this important matter.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Company]  
+[Your Contact Information]"	1.0	1.0	1.0	1.0	
+10	Escalate urgent security issue	"[""Critical vulnerability found"", ""Immediate patch required"", ""Security team already notified""]"	urgent	This is urgent: a critical vulnerability has been found and requires an immediate patch. The security team has already been notified and is taking action.	Urgent: Immediate Action Required for Critical Security Vulnerability	"Dear [Recipient's Name],
+
+I am writing to urgently bring to your attention a critical vulnerability that has been identified within our system. This issue requires immediate attention and a patch is necessary to mitigate the risks associated with this vulnerability.
+
+Our security team has already been notified and is currently assessing the situation to implement the required fixes as swiftly as possible. I recommend we prioritize this matter to ensure the integrity of our systems and protect our data.
+
+Please let me know how you would like to proceed or if there are any additional resources needed to expedite the patching process.
+
+Thank you for your immediate attention to this pressing issue.
+
+Best regards,
+
+[Your Name]  
+[Your Position]  
+[Your Contact Information]"	1.0	1.0	1.0	1.0	
