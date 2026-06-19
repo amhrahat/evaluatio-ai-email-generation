@@ -52,6 +52,7 @@ Return ONLY a number between 0 and 1.
     try:
         judge_llm = get_judge_llm()
         result = judge_llm.invoke(prompt.format(tone=tone, email=email))
+        print(f"Tone evaluation result: {result.content.strip()}")
         return float(result.content.strip())
     except Exception:
         email_lower = email.lower()
@@ -87,6 +88,7 @@ def structure_score(email: str) -> float:
     if "thank" in text or "regards" in text or "sincerely" in text:
         score += 0.2
 
+    
     return min(score, 1.0)
 
 
