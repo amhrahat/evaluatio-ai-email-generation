@@ -9,6 +9,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO_ROOT))
 
 from app.core.llm import generate_email
+from app.core.llm2 import generate_email2
 from metrics import evaluate_email
 
 
@@ -17,7 +18,7 @@ def load_test_cases(path: str) -> list[dict]:
         return json.load(f)
 
 
-async def evaluate_case(test_case: dict) -> dict:
+async def evaluate_case1(test_case: dict) -> dict:
     generated = await generate_email(
         intent=test_case["intent"],
         key_facts=test_case["key_facts"],
@@ -38,6 +39,29 @@ async def evaluate_case(test_case: dict) -> dict:
         "structure_score": scores["structure_score"],
         "avg": scores["avg"]
     }
+
+async def evaluate_case2(test_case: dict) -> dict:
+    generated = await generate_email2(
+        intent=test_case["intent"],
+        key_facts=test_case["key_facts"],
+        tone=test_case["tone"],
+    )
+
+    scores = evaluate_email(generated, test_case["key_facts"], test_case["tone"])
+    return {
+        "id": test_case["id"],
+        "intent": test_case["intent"],
+        "key_facts": test_case["key_facts"],
+        "tone": test_case["tone"],
+        "reference_email": test_case.get("reference_email", ""),
+        "subject": generated.get("subject", ""),
+        "body": generated.get("body", ""),
+        "fact_coverage": scores["fact_coverage_score"],
+        "tone_score": scores["tone_score"],
+        "structure_score": scores["structure_score"],
+        "avg": scores["avg"]
+    }
+
 
 
 def export_csv(results: list[dict], path: str):
@@ -92,19 +116,33 @@ def main():
     test_cases_file = Path(__file__).parent / "test_cases.json"
     test_cases = load_test_cases(str(test_cases_file))
 
-    results = []
+    results1 = []
+    results2 = []
+
     for case in test_cases:
         print(f"Evaluating {case['id']} - {case['intent']}")
-        result = asyncio.run(evaluate_case(case))
-        results.append(result)
+        result1 = asyncio.run(evaluate_case1(case))
+        result2 = asyncio.run(evaluate_case2(case))
+        results1.append(result1)
+        results2.append(result2)
 
-    csv_path = Path(__file__).parent / "evaluation_report.csv"
-    json_path = Path(__file__).parent / "evaluation_report.json"
-    export_csv(results, str(csv_path))
-    export_json(results, str(json_path))
 
-    print(f"Saved CSV report to {csv_path}")
-    print(f"Saved JSON report to {json_path}")
+    csv_path1 = Path(__file__).parent / "evaluation_report1.csv"
+    json_path1 = Path(__file__).parent / "evaluation_report1.json"
+    export_csv(results1, str(csv_path1))
+    export_json(results1, str(json_path1))
+
+
+    csv_path2 = Path(__file__).parent / "evaluation_report2.csv"
+    json_path2 = Path(__file__).parent / "evaluation_report2.json"
+    export_csv(results2, str(csv_path2))
+    export_json(results2, str(json_path2))
+
+
+    print(f"Saved CSV report to {csv_path1}")
+    print(f"Saved JSON report to {json_path1}")
+    print(f"Saved CSV report to {csv_path2}")
+    print(f"Saved JSON report to {json_path2}")
 
 
 if __name__ == "__main__":

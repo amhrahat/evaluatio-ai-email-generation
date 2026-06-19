@@ -16,11 +16,13 @@ class EmailOutput(BaseModel):
 llm = ChatOpenAI(
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
-    model=os.getenv("MODEL1"),
+    model=os.getenv("MODEL"),
     temperature=float(os.getenv("TEMPERATURE", 0.7)),
 )
 
+
 structured_llm = llm.with_structured_output(EmailOutput)
+
 
 prompt = PromptTemplate(
     input_variables=["intent", "key_facts", "tone"],
@@ -50,15 +52,17 @@ Ensure your response is ONLY valid JSON, no additional text or markdown."""
 async def generate_email(intent: str, key_facts: list[str], tone: str):
     formatted_facts = "\n".join(f"- {fact}" for fact in key_facts)
 
-    final_prompt = prompt.format(
+    final_prompt1 = prompt.format(
         intent=intent,
         key_facts=formatted_facts,
         tone=tone
     )
 
-    result = structured_llm.invoke(final_prompt)
+    result = structured_llm.invoke(final_prompt1)
+
 
     return {
         "subject": result.subject,
-        "body": result.body
+        "body": result .body,
+ 
     }
