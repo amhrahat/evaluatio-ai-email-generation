@@ -15,7 +15,7 @@ def fact_coverage_score(email: str, key_facts: list[str]) -> float:
         words = fact.lower().split()
         if any(word in email_lower for word in words):
             matched += 1
-
+    
     return matched / len(key_facts) if key_facts else 0.0
 
 
@@ -52,7 +52,6 @@ Return ONLY a number between 0 and 1.
     try:
         judge_llm = get_judge_llm()
         result = judge_llm.invoke(prompt.format(tone=tone, email=email))
-        print(f"Tone evaluation result: {result.content.strip()}")
         return float(result.content.strip())
     except Exception:
         email_lower = email.lower()
@@ -88,7 +87,6 @@ def structure_score(email: str) -> float:
     if "thank" in text or "regards" in text or "sincerely" in text:
         score += 0.2
 
-    
     return min(score, 1.0)
 
 
