@@ -53,27 +53,19 @@ def export_csv(results: list[dict], path: str):
         "tone_score",
         "structure_score",
         "avg",
-        "metric_definition",
     ]
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=keys, delimiter="\t")
-        writer.writeheader()
 
-        definitions = [
-            {"metric_definition": "Metric definitions:"},
-            {
-                "metric_definition": "fact_coverage: Fraction of required key facts present in the generated email subject/body. This score is the number of matched facts divided by the total required facts.",
-            },
-            {
-                "metric_definition": "tone_score: Degree to which the generated email matches the requested tone. Uses an LLM judge when available, otherwise keyword matching fallback.",
-            },
-            {
-                "metric_definition": "structure_score: Email structure score based on presence of subject, appropriate length, greeting, and closing, capped at 1.0.",
-            },
-            {"metric_definition": ""},
-        ]
-        for row in definitions:
-            writer.writerow(row)
+    with open(path, "w", newline="", encoding="utf-8") as f:
+        # Write metric definitions as comments
+        f.write("# Metric definitions:\n")
+        f.write("# fact_coverage: Fraction of required key facts present in the generated email subject/body. This score is the number of matched facts divided by the total required facts.\n")
+        f.write("# tone_score: Degree to which the generated email matches the requested tone. Uses an LLM judge when available, otherwise keyword matching fallback.\n")
+        f.write("# structure_score: Email structure score based on presence of subject, appropriate length, greeting, and closing, capped at 1.0.\n")
+        f.write("\n")
+
+        # Use proper CSV quoting for multi-line content
+        writer = csv.DictWriter(f, fieldnames=keys, delimiter=",", quoting=csv.QUOTE_ALL)
+        writer.writeheader()
 
         for row in results:
             writer.writerow({
@@ -88,7 +80,6 @@ def export_csv(results: list[dict], path: str):
                 "tone_score": row["tone_score"],
                 "structure_score": row["structure_score"],
                 "avg": row["avg"],
-                "metric_definition": "",
             })
 
 
